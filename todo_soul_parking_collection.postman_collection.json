@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "c9d891da-9358-4047-ad02-4cd802b8705d",
+		"name": "todo soul parking collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5117091"
+	},
+	"item": [
+		{
+			"name": "post todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"todolist buat it\",\n    \"description\": \"ini buat be\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/todo",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all todo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/todo",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get todo by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/todo/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"todo",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update todo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"todolist buat it\",\n    \"description\": \"ini buat be updated\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/todo/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"todo",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "finish todo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/todo/1/finish",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"todo",
+						"1",
+						"finish"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete todo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/todo/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"todo",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
